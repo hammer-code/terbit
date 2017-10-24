@@ -1,5 +1,12 @@
 {
-  "devDependencies": {
+  "name": "terbit",
+  "description": "terbit web dev bootcamp static website",
+  "version": "0.0.1",
+  "author": "Muhammad Rizki Rijal <arkinthesky.69@gmail.com>",
+  "dependencies": {
     "gh-pages": "^1.0.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages --branch gh-pages"
   }
 }
