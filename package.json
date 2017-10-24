@@ -7,6 +7,6 @@
     "gh-pages": "^1.0.0"
   },
   "scripts": {
-    "deploy": "gh-pages --branch gh-pages"
+    "deploy": "gh-pages -d . --branch gh-pages"
   }
 }

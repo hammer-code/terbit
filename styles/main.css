@@ -1,0 +1,451 @@
+/**
+ * Color Pallete
+ *
+ * Gray   : #f0f7ff;
+ * Green  : #15c26b;
+ * Blue   : #02b3e4;
+ * Black  : #525c65;
+ * Yellow : #FFEB3B;
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@import 'button.css';
+@import 'modal.css';
+@import 'loader.css';
+@import 'table.css';
+@import 'animation.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #525c65;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+body.has-modal {
+  position: relative;
+}
+
+a {
+  color: #868686;
+}
+
+a:hover, a:active {
+  color: #525c65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+input {
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input:active, input:focus {
+  outline: 0;
+}
+
+#hero {
+  margin-bottom: 20px;
+  padding: 80px 0;
+}
+
+#hero .hero-bg {
+  width: 100%;
+  height: 620px;
+  background: linear-gradient(90deg, #FFEB3B, #FFBA00);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform: skew(0deg, -15deg);
+  overflow: hidden;
+  z-index: -10000;
+}
+
+#hero .hero-sun-radial {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(80px at 30% 50% , rgb(255, 235, 59) 0%, rgba(255, 235, 59, .3) 220px, rgba(255, 255, 255, 0) 320px); ;
+  height: 620px;
+  position: absolute;
+  animation: SunRotation 12s steps(120) infinite;;
+}
+
+#why-are-we-exists, #our-program,
+#volunteers, #join-us, #community {
+  padding: 120px 0;
+}
+
+#our-program {
+  background-color: #f0f7ff;
+}
+
+#join-us {
+  background: linear-gradient(90deg, #FFEB3B 80%, #FFBA00);
+}
+
+#community {
+  background: url(../images/community.jpg);
+}
+
+#banner, #alumni, #schedule {
+  padding: 80px 0;
+}
+
+#banner {
+  position: relative;
+  margin-top: 72px;
+}
+
+#banner .banner-content {
+  color: #fff;
+}
+
+#alumni {
+  background-color: #F6F9FC;
+}
+
+#schedule {
+  background-color: #fff;
+}
+
+/**
+ * Grid
+ */
+
+.col-6 {
+  width: 390px;
+  float: left;
+  padding: 0 30px;
+}
+
+/**
+ * Utils
+ */
+
+.clearfix {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.action-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.section-header {
+  color: #15c26b;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-background {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/**
+ * Header
+ */
+
+.header {
+  background: transparent;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.hero-lead-wrapper {
+  padding: 160px 0;
+}
+
+.brand {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-nav {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.main-nav__brand {
+  float: left;
+}
+
+.main-nav__menu {
+  float: right;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__menu > li {
+  display: inline-block;
+}
+
+.main-nav__menu > li > a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  padding: 0 8px;
+}
+
+/**
+ * Hero
+ */
+
+.hero-header {
+  color: #000;
+  text-align: center;
+}
+
+.hero-description {
+  text-align: center;
+}
+
+.section-header--center {
+  text-align: center;
+}
+
+.section-header--white {
+  color: #fff;
+}
+
+/**
+ * Stacked Images
+ */
+
+.stacked-images {
+  position: relative;
+}
+
+.stacked-images-1 {
+  width: 320px;
+  height: 220px;
+  box-shadow: 5px 5px 25px rgba(46, 61, 73, 0.15);
+}
+
+.stacked-images-2 {
+  position: absolute;
+  top: 136px;
+  right: 0;
+  width: 320px;
+  height: 136px;
+  z-index: 100;
+  box-shadow: 5px 5px 25px rgba(46, 61, 73, 0.15);
+}
+
+/**
+ * Program
+ */
+
+.programs-wrapper {
+  margin-top: 40px;
+}
+
+.program-card {
+  background-color: #fff;
+  box-shadow: 5px 5px 25px rgba(46, 61, 73, 0.15);
+  border-radius: 8px;
+}
+
+.program-card__title {
+  font-weight: 300;
+  color: #000;
+}
+
+.program-card__detail {
+  padding: 30px;
+}
+
+.program-card__image-wrapper {
+  position: relative;
+}
+
+.program-card__image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.program-card__image-overlay--blue {
+  background-color: rgba(2,179,228,0.8);
+}
+
+.program-card__image-overlay--green {
+  background-color: rgba(2,204,186,0.8);
+}
+
+.program-card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.program-card__skill-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/**
+ * Volunteer
+ */
+
+.people-wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+  margin-top: 30px;
+}
+
+.people-wrapper:first-child {
+  margin-top: 0px;
+}
+
+.person-card {
+  float: left;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 5px 20px;
+  transition: all 300ms ease;
+  border-radius: 8px;
+}
+
+.person-card:hover {
+  background: #fff;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.15);
+  transform: scale(1.02);
+}
+
+.person-card__title {
+  margin-top: 25px;
+  font-weight: 300;
+  color: #000;
+}
+
+.person-card__photo {
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+/**
+ * Join Us
+ */
+
+.join-us-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 80px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, .16);
+}
+
+/**
+ * Community
+ */
+
+.community-content {
+  z-index: 100;
+}
+
+.community-content p {
+  color: #fff;
+}
+
+/**
+ * Schedule Week
+ */
+.schedule-week {
+  margin-top: 30px;
+}
+
+.schedule-week:first-child {
+  margin-top: 0px;
+}
+
+.schedule-week__week {
+  font-size: 20px;
+}
+
+/**
+ * Footer
+ */
+
+.footer {
+  background: #3D3D3D;
+  padding: 60px 0;
+}
+
+.footer__contribution {
+  text-align: center;
+  color: #fff;
+}
+
+.footer__love {
+  color: #F44336;
+}
+
+/**
+ * Form
+ */
+.form .form-group {
+  margin-bottom: 8px;
+}
+
+/**
+ * Sign Up Form
+ */
+
+.sign-up-form {
+  padding-bottom: 40px;
+}
+
+.sign-up-form input {
+  width: 100%;
+}
+
+.sign-up-form p {
+  margin-top: 0;
+}

@@ -1,0 +1,50 @@
+/**
+ * Button
+ */
+.btn {
+  padding: 10px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+  transition: all 300ms ease;
+  border: none;
+  font-size: 16px;
+}
+
+.btn--simple {
+  box-shadow: none;
+}
+
+.btn.btn--simple {
+  border: 1px solid #eaeaea;
+}
+
+.btn--primary.btn--simple {
+  border: 1px solid #FFEB3B;
+}
+
+.btn--simple:hover {
+  box-shadow: none !important;
+}
+
+.btn, .btn:hover, .btn:active, .btn:focus {
+  text-decoration: none;
+}
+
+.btn:hover {
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+  color: #525c65;
+}
+
+.btn--primary {
+  background-color: #FFEB3B;
+  color: #000;
+  transition: all 300ms ease;
+}
+
+.btn--full {
+  width: 100%;
+  display: block;
+}

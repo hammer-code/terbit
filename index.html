@@ -1,10 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Terbit</title>
+  <meta charset="UTF-8">
+  <title>Terbit - Web Development Bootcamp Gratis</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>Terbit - Free Web Development Bootcamp</h1>
+  <header class="header">
+    <div class="container">
+      <nav class="main-nav">
+        <a href="index.html" class="brand main-nav__brand">Terbit</a>
+
+        <ul class="main-nav__menu">
+          <li><a href="schedule.html">Jadwal</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-lead-wrapper">
+        <h1 class="hero-header">Bootcamp Web Development Profesional, Gratis</h1>
+        <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-are-we-exists">
+    <div class="container clearfix">
+      <div class="col-6">
+        <h2 class="section-header">Mengapa Kami Hadir</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae consectetur, iste! Ratione in, vitae dolorem asperiores odit quam, repudiandae. Nesciunt earum dolorem tenetur ex voluptatibus distinctio, molestiae sed, harum dolore!</p>
+      </div>
+      <div class="col-6">
+        <div class="stacked-images">
+          <img src="images/img-1.jpg" class="stacked-images-1" alt="">
+          <img src="images/img-2.jpg" class="stacked-images-2" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="our-program">
+    <div class="container">
+      <h2 class="section-header section-header--center">Program Kami</h2>
+      <div class="programs-wrapper clearfix">
+        <div class="col-6">
+          <div class="program-card">
+            <div class="program-card__image-wrapper">
+              <div class="program-card__image-overlay program-card__image-overlay--green"></div>
+              <div class="program-card__image" style="background-image: url(images/img-1.jpg)"></div>
+            </div>
+            <div class="program-card__detail">
+              <h3 class="program-card__title">Dasar</h3>
+              <ul class="program-card__skill-list">
+                <li>HTML &amp; CSS</li>
+                <li>Javascript</li>
+                <li>Git</li>
+                <li>Deployment</li>
+                <li>JS Build Tools</li>
+                <li>Linux Administration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="program-card">
+            <div class="program-card__image-wrapper">
+              <div class="program-card__image-overlay program-card__image-overlay--blue"></div>
+              <div class="program-card__image" style="background-image: url(images/img-1.jpg)"></div>
+            </div>
+            <div class="program-card__detail">
+              <h3 class="program-card__title">Menengah</h3>
+              <ul class="program-card__skill-list">
+                <li>Relational Database</li>
+                <li>Node JS</li>
+                <li>Programming Paradigm</li>
+                <li>Frontend Framework</li>
+                <li>TDD</li>
+                <li>CI &amp; CD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="volunteers">
+    <div class="container">
+      <h2 class="section-header section-header--center">Instruktur / Volunteer</h2>
+      <div class="people-wrapper">
+        <div class="person-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" class="person-card__photo" alt="">
+          <h3 class="person-card__title">Sofyan Saputra</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="person-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" class="person-card__photo" alt="">
+          <h3 class="person-card__title">Handry Wahyudi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="person-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" class="person-card__photo" alt="">
+          <h3 class="person-card__title">Lutfi Adnan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+      </div>
+      <div class="action-wrapper">
+        <a href="#" class="btn btn--primary">Lihat Lebih Lengkap</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="join-us">
+    <div class="container">
+      <div class="join-us-content clearfix">
+        <div style="width: 68%; padding: 0 1%; float: left">
+          <h2 class="section-header">Mari Belajar Bersama Kami</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum placeat hic accusantium, eos magni blanditiis.</p>
+        </div>
+
+        <div style="width: 28%; padding: 0 1%; float: left">
+          <div style="padding: 40px 0; text-align: center">
+            <a href="#" class="btn btn--primary sign-up-button">Daftar Untuk Mulai</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="community" class="banner-background">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="community-content">
+        <h2 class="section-header section-header--center section-header--white">Kami Adalah Bagian Dari Komunitas Hammercode</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis odio tempora, voluptatem quam voluptate, quidem eveniet ullam iusto totam aut similique culpa libero esse molestias? Placeat odio eligendi ab. Sequi.</p>
+        <div class="action-wrapper">
+          <a class="btn btn--primary" target="_blank" href="https://www.facebook.com/hammercodepalu/">Saya Ingin Gabung</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__contribution">
+        dengan <span class="footer__love">♥</span>︎ untuk Palu
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="sign-up-modal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Jadi Web Developer Profesional!
+        <button class="close-button">
+           &times;
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form class="form sign-up-form">
+          <p>Dapatkan pengetahuan untuk menjadi web developer profesional dari ahlinya!</p>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Nama">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn--simple btn--primary btn--full">Daftar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>

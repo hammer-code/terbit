@@ -1,0 +1,71 @@
+/**
+ * Modal
+ */
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.50);
+  transition: all 300ms ease;
+  opacity: 0;
+  z-index: -1000;
+}
+
+body.has-modal .modal {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: all 600ms ease;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+body.has-modal .modal > .modal-dialog {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.modal-header {
+  font-weight: 600;
+  position: relative;
+}
+
+.modal-header .close-button {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 0px 2px;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    padding: 20px 30px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+}
+
+.modal-footer {
+  border-top: 1px solid #eee;
+}
